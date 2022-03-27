@@ -1,15 +1,15 @@
 class Robot:
     def __init__(self):
-        self.i=0
-        self.j=0
+        self.position=[0,0]
     def movements(self,Direction):
         if(Direction =='R'):
-            self.j=self.j+1
+            self.position[1]=self.position[1]+1
         elif(Direction == 'D'):
-            self.i=self.i+1
+            self.position[0]=self.position[0]+1
         elif(Direction == 'L'):
-            self.j=self.j-1
+            self.position[1]=self.position[1]-1
         elif(Direction == 'T'):
-            self.ji=self.i-1
-        return ((self.i,self.j))
+            self.position[0]=self.position[0]-1
+        return ((self.position[0],self.position[1]))
     
+
